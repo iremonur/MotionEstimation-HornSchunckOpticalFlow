@@ -108,8 +108,8 @@ if __name__ == '__main__':
 
     ROOT_DIR   = os.getcwd()
     FRAMES_DIR = os.path.join(ROOT_DIR, 'frames')
-    RESULT_DIR = os.path.join(ROOT_DIR, 'results_1') # results dir (optical flow vectors)
-    EST_DIR    = os.path.join(ROOT_DIR, 'estimated_1') # estimated dir
+    RESULT_DIR = os.path.join(ROOT_DIR, 'results') # results dir (optical flow vectors)
+    EST_DIR    = os.path.join(ROOT_DIR, 'estimated') # estimated dir
     parser = ArgumentParser(description = 'Horn Schunck Optical Flow Estimation')
     parser.add_argument('video_path', type = str, help = 'Vide path (include format)')
     args = parser.parse_args()
