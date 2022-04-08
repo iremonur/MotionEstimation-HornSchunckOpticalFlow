@@ -82,7 +82,7 @@ class OpticalClass():
                 #draw only significant changes
                 if magnitude > magnitudeAvg:
                     ax.arrow(j,i, dx, dy, color = 'red')
-        plt.savefig(os.path.join(RESULT_DIR, 'frame_{}.png'. format(idx)))
+        plt.savefig(os.path.join(FLOW_DIR, 'frame_{}.png'. format(idx)))
 
     def get_magnitude(self, U, V):
         sum = 0.0
@@ -109,7 +109,8 @@ if __name__ == '__main__':
     SRC_DIR   = os.getcwd()
     ROOT_DIR = os.path.join(SRC_DIR, '..')
     FRAMES_DIR = os.path.join(ROOT_DIR, 'frames')
-    RESULT_DIR = os.path.join(ROOT_DIR, 'flows') # results dir (optical flow vectors)
+    FLOW_DIR = os.path.join(ROOT_DIR, 'flows') # results dir (optical flow vectors)
+    RESULT_DIR    = os.path.join(ROOT_DIR, 'results') # estimated dir
     EST_DIR    = os.path.join(ROOT_DIR, 'estimated') # estimated dir
     parser = ArgumentParser(description = 'Horn Schunck Optical Flow Estimation')
     parser.add_argument('video_path', type = str, help = 'Vide path (include format)')
@@ -138,10 +139,12 @@ if __name__ == '__main__':
             flows.append(flow)
             derivs.append(I)
             flow_obj.plot_flow(U,V, frame, idx)
+            """
             if len(flows) == 2:
                 warp_flow(frame, frame_list[idx+1], flows[0], derivs[0], flows[1], derivs[1], idx, EST_DIR)
                 flows.pop(0)
                 derivs.pop(0)
+            """
 
     
     #To plot the error
@@ -151,7 +154,7 @@ if __name__ == '__main__':
     plt.xlabel("Iteration") 
     plt.ylabel("Error") 
     plt.plot(x,errors) 
-    plt.savefig("results/erros_0.png")
+    plt.savefig(os.path.join(RESULT_DIR, 'frame.png'))
     plt.show()
     """
     
