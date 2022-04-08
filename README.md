@@ -8,15 +8,15 @@ This project report can be found in the "ProjectReport" folder.
 ## **Results** 
 To estimate the optical flow vectors, the experiments are conducted with different smoothness parameters and error functions are reported. 
 ### **α** = 0
-![](erros_alpha_0.png)
+![](results/erros_alpha_0.png)
 ### **α** = 1
-![](erros_alpha_1.png)
+![](results/erros_alpha_1.png)
 ### **α** = 10
-![](erros_alpha_10.png)
+![](results/erros_alpha_10.png)
 
 
 The estimated frames are reported with different smoothness parameters. 
-![](estimations_w_different_alphas.png)
+![](results/estimations_w_different_alphas.png)
 
 ## **Credits**
 Utilized from "Video-Interpolation-using-Optical-Flow" by Vineeth S. (vineeths96@github) for estimation using the optical flow vectors.
