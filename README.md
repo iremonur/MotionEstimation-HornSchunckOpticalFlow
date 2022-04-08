@@ -16,6 +16,7 @@ To estimate the optical flow vectors, the experiments are conducted with differe
 
 
 The estimated frames are reported with different smoothness parameters. 
+
 ![](results/estimations_w_different_alphas.png)
 
 ## **Credits**
