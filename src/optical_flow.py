@@ -106,9 +106,10 @@ class OpticalClass():
 
 if __name__ == '__main__':
 
-    ROOT_DIR   = os.getcwd()
+    SRC_DIR   = os.getcwd()
+    ROOT_DIR = os.path.join(SRC_DIR, '..')
     FRAMES_DIR = os.path.join(ROOT_DIR, 'frames')
-    RESULT_DIR = os.path.join(ROOT_DIR, 'results') # results dir (optical flow vectors)
+    RESULT_DIR = os.path.join(ROOT_DIR, 'flows') # results dir (optical flow vectors)
     EST_DIR    = os.path.join(ROOT_DIR, 'estimated') # estimated dir
     parser = ArgumentParser(description = 'Horn Schunck Optical Flow Estimation')
     parser.add_argument('video_path', type = str, help = 'Vide path (include format)')
@@ -150,7 +151,7 @@ if __name__ == '__main__':
     plt.xlabel("Iteration") 
     plt.ylabel("Error") 
     plt.plot(x,errors) 
-    plt.savefig("erros_0.png")
+    plt.savefig("results/erros_0.png")
     plt.show()
     """
     
