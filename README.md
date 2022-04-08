@@ -1,12 +1,10 @@
-# MotionEstimation-HornSchunckOpticalFlow
-
-This reprository provides an implementation of Horn and Schunck Optical Flow algorithm for motion estimation. The data is a video with format ".avi" and can be found in data folder. 
+This repository provides an implementation of the Horn and Schunck Optical Flow algorithm for motion estimation. The data is a video with the format ".avi" and can be found in the data folder. 
 ## **Usage**
 ```sh
 python optical_flow.py </data/path>
 ```
 ## **Report**
-This project report is can be found in "ProjectReport" folder.
+This project report can be found in the "ProjectReport" folder.
 # **Results** 
 To estimate the optical flow vectors, the experiments are conducted with different smoothness parameters and error functions are reported. 
 ### **α** = 0
@@ -19,3 +17,5 @@ To estimate the optical flow vectors, the experiments are conducted with differe
 
 The estimated frames are reported with different smoothness parameters. 
 ![](estimations_w_different_alphas.png)
+## **Credits**
+Utilized from "Video-Interpolation-using-Optical-Flow" by Vineeth S. (vineeths96@github) for estimation using the optical flow vectors.
