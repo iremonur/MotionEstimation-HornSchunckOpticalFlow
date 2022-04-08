@@ -6,7 +6,7 @@ $ python optical_flow.py </data/path>
 ## **Report**
 The project report can be found in the "ProjectReport" folder.
 ## **Results** 
-To estimate the optical flow vectors, the experiments are conducted with different smoothness parameters and error functions are reported. 
+To obtain the optical flow vectors, the experiments are conducted with different smoothness parameters and error functions are reported. 
 ### **α** = 0
 ![](results/erros_alpha_0.png)
 ### **α** = 1
