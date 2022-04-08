@@ -109,6 +109,8 @@ if __name__ == '__main__':
     SRC_DIR   = os.getcwd()
     ROOT_DIR = os.path.join(SRC_DIR, '..')
     FRAMES_DIR = os.path.join(ROOT_DIR, 'frames')
+    if not os.path.exists(FRAMES_DIR):
+        os.makedirs(FRAMES_DIR)
     FLOW_DIR = os.path.join(ROOT_DIR, 'flows') # results dir (optical flow vectors)
     RESULT_DIR    = os.path.join(ROOT_DIR, 'results') # estimated dir
     EST_DIR    = os.path.join(ROOT_DIR, 'estimated') # estimated dir
