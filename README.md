@@ -15,5 +15,7 @@ To estimate the optical flow vectors, the experiments are conducted with differe
 ![](erros_alpha_1.png)
 ### **α** = 10
 ![](erros_alpha_10.png)
+
+
 The estimated frames are reported with different smoothness parameters. 
 ![](estimations_w_different_alphas.png)
