@@ -15,7 +15,7 @@ To estimate the optical flow vectors, the experiments are conducted with differe
 ![](results/erros_alpha_10.png)
 
 
-The estimated frames are reported with different smoothness parameters. 
+The frames are estimated using the motion vecors reached by optical flow algorithm.
 
 
 ![](results/estimations_w_different_alphas.png)
