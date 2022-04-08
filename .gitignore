@@ -1,0 +1,10 @@
+*.png
+*.pcd
+*.bin
+*.lraw
+*.timestamps
+*.out
+*.pyc
+*.npz
+
+
