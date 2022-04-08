@@ -4,7 +4,7 @@ This repository provides an implementation of the Horn and Schunck Optical Flow 
 $ python optical_flow.py </data/path>
 ```
 ## **Report**
-This project report can be found in the "ProjectReport" folder.
+The project report can be found in the "ProjectReport" folder.
 ## **Results** 
 To estimate the optical flow vectors, the experiments are conducted with different smoothness parameters and error functions are reported. 
 ### **α** = 0
